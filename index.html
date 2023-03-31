@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async defer></script>
+
+    <title>Fundamentals of Security</title>
+  </head>
+  <body class="homepage">
+    <div id="wrapper">
+      <header>
+        <h1>Why You Should Be Concerned</h1>
+        <nav>
+          <ul>
+            <li><a href="#a">Introduction</a></li>
+            <li><a href="#threat">Threats</a></li>
+            <li><a href="#">Protecting Information Systems</a></li>
+            <li><a href="#">Privacy Concerns for Businesses</a></li>
+            <li><a href="#">Mitigation and Security Controls</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h3>Introduction</h3>
+      <p>
+        First of all, in this security world there are a lot of buzz words which
+        may seem to relate to the same thing, but in reality are very different
+        from one another. For example a common misconception is that cyber
+        security, information security and computer security are the same thing.
+        An easy mistake to make, but a mistake nonetheless.
+      </p>
+
+      <h4>Key Definitions</h4>
+      <ul class="two-columns">
+        <li>
+          Information Security - The protection of information and information
+          systems from unauthorized access, use, disclosure, disruption,
+          modification, or destruction in order to provide confidentiality,
+          integrity, and availability.
+        </li>
+        <li>
+          Cyber Security - Measures and controls that ensure confidentiality,
+          integrity, and availability of the information processed and stored by
+          a computer.
+        </li>
+        <li>
+          Computer Security - Prevention of damage to, protection of, and
+          restoration of computers, electronic communications systems,
+          electronic communications services, wire communication, and electronic
+          communication, including information contained therein, to ensure its
+          availability, integrity, authentication, confidentiality, and
+          nonrepudiation.
+        </li>
+        <li>
+          All of the terms above are interlinked and the meaning of them depends
+          on who you ask as there are multiple organisations which set the
+          definitons of these terms. Information Security will usually include
+          the non-technical side of security as well, whereas Cybersecurity will
+          not. Computer security is essentially Cybersecurity but on a smaller
+          scale.
+        </li>
+        <li>
+          Confidentiality - Preserving authorized restrictions on access and
+          disclosure, including means for protecting personal privacy and
+          proprietary information.
+        </li>
+        <li>
+          Integrity - Guarding against improper information modification or
+          destruction, and includes ensuring information non-repudiation and
+          authenticity.
+        </li>
+        <li>
+          Availability - Ensuring timely and reliable access to and use of
+          information.
+        </li>
+        <li>
+          Non-repudiation - A service that is used to provide assurance of the
+          integrity and origin of data in such a way that the integrity and
+          origin can be verified and validated by a third party as having
+          originated from a specific entity
+        </li>
+        <li>
+          All defintions taken from
+          <a href="https://csrc.nist.gov/glossary/">NIST</a> which is one of
+          main organistations which creates standards, guidelines and best
+          practices to manage Cybersecurity/ Information Security risks. The
+          other organistation being the
+          <a href="https://www.iso.org/home.html">ISO</a>, hence the difference
+          in defintions and best practices amongst other things.
+        </li>
+      </ul>
+      <p>Boring bit over ...for now.</p>
+
+      <a id="threat"></a>
+      <h3>Threats</h3>
+      <div class="card-container" id="a">
+        <div class="cards" id="chn">
+          <h2>China</h2>
+
+          <button class="myBtn">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
+              alt="Flag of China"
+            />
+          </button>
+
+          <!--Modal Start-->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>China</h2>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+              </div>
+              <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div>
+            </div>
+          </div>
+          <!--Modal end-->
+
+          <h3>Country Profile</h3>
+          <p>
+            Afghanistan is a country located in South Asia and Central Asia. It
+            has a rich cultural heritage and has been home to several ancient
+            civilizations. The country has been involved in conflict for many
+            years, including the Soviet war in the 1980s and the ongoing war
+            with Taliban militants.
+          </p>
+        </div>
+
+        <div class="cards" id="irn">
+          <h2>Iran</h2>
+          <button class="myBtn">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+              alt="Flag of Iran"
+            />
+          </button>
+
+          <!--Modal Start-->
+          <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal2-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Iran</h2>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+              </div>
+              <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div>
+            </div>
+          </div>
+          <!--Modal end-->
+          <h3>Country Profile</h3>
+          <p>
+            Afghanistan is a country located in South Asia and Central Asia. It
+            has a rich cultural heritage and has been home to several ancient
+            civilizations. The country has been involved in conflict for many
+            years, including the Soviet war in the 1980s and the ongoing war
+            with Taliban militants.
+          </p>
+        </div>
+        <div class="cards">
+          <h3>Russia</h3>
+          <button class="myBtn">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png?20120812011549"
+              alt="Flag of Russia"
+            />
+          </button>
+          <!--Modal Start-->
+          <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal3-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>Russia</h2>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+              </div>
+              <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div>
+            </div>
+          </div>
+          <!--Modal End-->
+          <h3>Country Profile</h3>
+        </div>
+        <div class="cards">
+          <h3>United States of America</h3>
+          <button class="myBtn">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
+              alt="Flag of USA"
+            />
+          </button>
+
+          <!-- Modal content -->
+          <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal4-content">
+              <div class="modal-header">
+                <span class="close">×</span>
+                <h2>USA</h2>
+              </div>
+              <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+              </div>
+              <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div>
+            </div>
+          </div>
+
+          <!--Modal End-->
+          <h3>Country Profile</h3>
+        </div>
+      </div>
+
+      <footer>
+        <p>Jonny Armstrong Walsh 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>
