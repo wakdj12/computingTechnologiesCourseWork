@@ -31,6 +31,15 @@ h1 {
   margin-top: 0.5em;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-weight: 525;
+}
+
+.country-p {
+  text-transform: lowercase;
+}
+
 p {
   margin: 0.25em;
 }
@@ -75,6 +84,9 @@ li {
 nav {
   text-align: center;
 }
+em {
+  color: #fffdd0;
+}
 
 a:link,
 a:visited,
@@ -103,7 +115,7 @@ button {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 20em; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -116,12 +128,13 @@ button {
 /* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #121212;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* use of -webkit ensures compatibility when using chrome and safari*/
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -161,26 +174,21 @@ button {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #121212;
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
+  padding: 0.1em;
+  background-color: #ff6961;
   color: white;
 }
 
 .modal-body {
-  padding: 2px 16px;
+  padding: 0.25em;
 }
 
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
 /*Modal End*/
 
 .card-container {
@@ -223,6 +231,9 @@ button {
     margin-left: 0.5em;
     margin-right: 0.5em;
     height: 30em;
+  }
+  .usa {
+    max-width: 33%;
   }
 }
 
