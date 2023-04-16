@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" async defer></script>
+    <link
+    href=https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Computer.svg/1024px-Computer.svg.png?20220907011846
+    rel="icon" type="image/x-icon" />
 
     <title>Fundamentals of Security</title>
   </head>
@@ -34,62 +37,74 @@
       <h4>Key Definitions</h4>
       <ul class="two-columns">
         <li>
-          Information Security - The protection of information and information
-          systems from unauthorized access, use, disclosure, disruption,
-          modification, or destruction in order to provide confidentiality,
-          integrity, and availability.
+          <span class="inline-d"
+            >Information Security
+            <span class="defintion">
+              - The protection of information and information systems from
+              unauthorized access, use, disclosure, disruption, modification, or
+              destruction in order to provide confidentiality, integrity, and
+              availability.
+            </span>
+          </span>
         </li>
         <li>
-          Cyber Security - Measures and controls that ensure confidentiality,
-          integrity, and availability of the information processed and stored by
-          a computer.
+          <span class="inline-d"
+            >Cyber Security<span class="defintion">
+              Measures and controls that ensure confidentiality, integrity, and
+              availability of the information processed and stored by a
+              computer.</span
+            >
+          </span>
         </li>
         <li>
-          Computer Security - Prevention of damage to, protection of, and
-          restoration of computers, electronic communications systems,
-          electronic communications services, wire communication, and electronic
-          communication, including information contained therein, to ensure its
-          availability, integrity, authentication, confidentiality, and
-          nonrepudiation.
+          <span class="inline-d">Computer Security</span
+          ><span class="defintion">
+            - Prevention of damage to, protection of, and restoration of
+            computers, electronic communications systems, electronic
+            communications services, wire communication, and electronic
+            communication, including information contained therein, to ensure
+            its availability, integrity, authentication, confidentiality, and
+            nonrepudiation.</span
+          >
+        </li>
+
+        <li>
+          <span class="inline-d">Confidentiality</span> - Preserving authorized
+          restrictions on access and disclosure, including means for protecting
+          personal privacy and proprietary information.
         </li>
         <li>
-          All of the terms above are interlinked and the meaning of them depends
-          on who you ask as there are multiple organisations which set the
-          definitons of these terms. Information Security will usually include
-          the non-technical side of security as well, whereas Cybersecurity will
-          not. Computer security is essentially Cybersecurity but on a smaller
-          scale.
+          <span class="inline-d">Integrity</span> - Guarding against improper
+          information modification or destruction, and includes ensuring
+          information non-repudiation and authenticity.
         </li>
         <li>
-          Confidentiality - Preserving authorized restrictions on access and
-          disclosure, including means for protecting personal privacy and
-          proprietary information.
+          <span class="inline-d">Availability</span> - Ensuring timely and
+          reliable access to and use of information.
         </li>
         <li>
-          Integrity - Guarding against improper information modification or
-          destruction, and includes ensuring information non-repudiation and
-          authenticity.
-        </li>
-        <li>
-          Availability - Ensuring timely and reliable access to and use of
-          information.
-        </li>
-        <li>
-          Non-repudiation - A service that is used to provide assurance of the
-          integrity and origin of data in such a way that the integrity and
-          origin can be verified and validated by a third party as having
-          originated from a specific entity
-        </li>
-        <li>
-          All defintions taken from
-          <a href="https://csrc.nist.gov/glossary/" target="_blank">NIST</a>
-          which is one of main organistations which creates standards,
-          guidelines and best practices to manage Cybersecurity/ Information
-          Security risks. The other organistation being the
-          <a href="https://www.iso.org/home.html" target="_blank">ISO</a>, hence
-          the difference in defintions and best practices amongst other things.
+          <span class="inline-d">Non-repudiation</span> - A service that is used
+          to provide assurance of the integrity and origin of data in such a way
+          that the integrity and origin can be verified and validated by a third
+          party as having originated from a specific entity
         </li>
       </ul>
+      <p>
+        All of the terms above are interlinked and the meaning of them depends
+        on who you ask as there are multiple organisations which set the
+        definitons of these terms. Information Security will usually include the
+        non-technical side of security as well, whereas Cybersecurity will not.
+        Computer security is essentially Cybersecurity but on a smaller scale.
+      </p>
+      <p>
+        All defintions taken from
+        <a href="https://csrc.nist.gov/glossary/" target="_blank">NIST</a>
+        which is one of main organistations which creates standards, guidelines
+        and best practices to manage Cybersecurity/ Information Security risks.
+        The other organistation being the
+        <a href="https://www.iso.org/home.html" target="_blank">ISO</a>, hence
+        the difference in defintions and best practices amongst other things.
+      </p>
       <p>Boring bit over... for now.</p>
 
       <a id="threat"></a>
@@ -125,7 +140,7 @@
           >
           <ul>
             <li>
-              <span class="inline-orange">What is it -</span> A form of
+              <span class="inline-d">What is it -</span> A form of
               <a
                 href="https://www.itgovernance.co.uk/social-engineering-attacks"
                 target="_blank"
@@ -135,15 +150,15 @@
               to a vulnerabilty
             </li>
             <li>
-              <span class="inline-orange">How is it carried out -</span> The
-              attacker will usually send out emails or messages which appear to
-              be genuine, such as a fake bank statement. This deceitful email
-              will then trick the user into entering their bank details which
-              are then transferred back to the attacker, allowing them to steal
+              <span class="inline-d">How is it carried out -</span> The attacker
+              will usually send out emails or messages which appear to be
+              genuine, such as a fake bank statement. This deceitful email will
+              then trick the user into entering their bank details which are
+              then transferred back to the attacker, allowing them to steal
               funds from the account.
             </li>
             <li>
-              <span class="inline-orange">How can it be prevented -</span> Being
+              <span class="inline-d">How can it be prevented -</span> Being
               aware of phishing attacks and taking care when clicking on links
               in emails/ messages is the best prevention technique here.
               Organisations may also introduce filters into their email system
@@ -160,25 +175,25 @@
           >
           <ul>
             <li>
-              <span class="inline-orange">What is it -</span> DoS and DDoS are
-              both acronyms for Denial of Service and Distributed Denial of
-              Service respectively. Usually directed towards organisations and
+              <span class="inline-d">What is it -</span> DoS and DDoS are both
+              acronyms for Denial of Service and Distributed Denial of Service
+              respectively. Usually directed towards organisations and
               governments instead of individuals as a result of ideology instead
               of financial gain.
             </li>
             <li>
-              <span class="inline-orange">How is it carried out -</span> Both
-              similar as they both overload a server with requests, resulting in
-              reduced functionallity for that server and potentially shutting it
-              down, hence DoS. DDoS attacks come from a network of connected
-              computers called botnets whereas DoS attacks originate from one
-              source. DDoS attacks are usually more punishing because of this as
-              it can be difficult to find the origin and block it from making
-              requests to a server.
+              <span class="inline-d">How is it carried out -</span> Both similar
+              as they both overload a server with requests, resulting in reduced
+              functionallity for that server and potentially shutting it down,
+              hence DoS. DDoS attacks come from a network of connected computers
+              called botnets whereas DoS attacks originate from one source. DDoS
+              attacks are usually more punishing because of this as it can be
+              difficult to find the origin and block it from making requests to
+              a server.
             </li>
             <li>
-              <span class="inline-orange">How can it be prevented -</span> By
-              using a combination of Intrusion Detection Systems and Intrusion
+              <span class="inline-d">How can it be prevented -</span> By using a
+              combination of Intrusion Detection Systems and Intrusion
               Prevention Systems. These basically just monitor and block any
               unwanted connections by matching patterns between what is actually
               happening and what they have been &ldquo;told&rdquo; what a danger
@@ -194,9 +209,9 @@
           >
           <ul>
             <li>
-              <span class="inline-orange">What is it -</span> Generic term for
-              any attack involving malicious software. Examples include
-              key-loggers which track what you have typed and
+              <span class="inline-d">What is it -</span> Generic term for any
+              attack involving malicious software. Examples include key-loggers
+              which track what you have typed and
               <a href="https://csrc.nist.gov/glossary/term/worm" target="_blank"
                 >worms</a
               >
@@ -204,7 +219,7 @@
               opposed to a regular virus which usually only infect one machine.
             </li>
             <li>
-              <span class="inline-orange">How is it carried out -</span> Usually
+              <span class="inline-d">How is it carried out -</span> Usually
               there is an element of social engineering involved such as a
               phishing attack with a seemingly legitimate looking link which
               actually contains a malicious payload. Another way in which this
@@ -217,7 +232,7 @@
               executed when a user accesses that website.
             </li>
             <li>
-              <span class="inline-orange">How can it be prevented -</span> Some
+              <span class="inline-d">How can it be prevented -</span> Some
               overlap with preventing phishing as social engineering is a key
               part in the delivery of malware so awareness of the way in which
               attackers operate is key. Anti-virus software is also a good idea.
@@ -238,24 +253,24 @@
           </a>
           <ul>
             <li>
-              <span class="inline-orange">What is it -</span>A way in which an
+              <span class="inline-d">What is it -</span>A way in which an
               attacker &ldquo;cracks&rdquo; a password in order to gain
               unauthorized access to a system.
             </li>
             <li>
-              <span class="inline-orange">How is it carried out -</span>
+              <span class="inline-d">How is it carried out -</span>
               Achieved through a program which normally submits between 10,000
               and 1 billion passwords per second depending on how powerful their
               equipment is. Simple to do and very effective.
             </li>
             <li>
-              <span class="inline-orange">How can it be prevented -</span> Using
-              very strong passwords i.e. long, not an actual word, and
-              containing a mix of numbers, symbols and letters. Another way
-              which prevents unauthorized access even if the password is cracked
-              is by using two-factor authentication (2FA) so when trying to log
-              into a computer/ service the user will also have to enter the new
-              factor (usually a randomly generated number).
+              <span class="inline-d">How can it be prevented -</span> Using very
+              strong passwords i.e. long, not an actual word, and containing a
+              mix of numbers, symbols and letters. Another way which prevents
+              unauthorized access even if the password is cracked is by using
+              two-factor authentication (2FA) so when trying to log into a
+              computer/ service the user will also have to enter the new factor
+              (usually a randomly generated number).
             </li>
           </ul>
         </li>
@@ -265,7 +280,7 @@
         <div class="cards" id="chn">
           <h3>China</h3>
 
-          <button class="myBtn">
+          <button class="btn">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"
               alt="Flag of China"
@@ -320,7 +335,7 @@
 
         <div class="cards" id="irn">
           <h3>Iran</h3>
-          <button class="myBtn">
+          <button class="btn">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
               alt="Flag of Iran"
@@ -387,7 +402,7 @@
         </div>
         <div class="cards">
           <h3>Russia</h3>
-          <button class="myBtn">
+          <button class="btn">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png?20120812011549"
               alt="Flag of Russia"
@@ -441,7 +456,7 @@
         </div>
         <div class="cards usa">
           <h3>United States of America</h3>
-          <button class="myBtn">
+          <button class="btn">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg"
               alt="Flag of USA"
