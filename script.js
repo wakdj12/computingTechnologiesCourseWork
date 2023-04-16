@@ -25,18 +25,3 @@ window.onclick = function (event) {
     modal[1].style.display = "none";
   }
 };
-
-// function toTitleCase(str) {
-//   str = str.split(" ");
-//   for (var i = 0; i < str.length; i++) {
-//     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
-//   }
-//   return str.join(" ");
-// }
-
-// document.getElementsByClassName("country-p")[0].innerText = toTitleCase(
-//   document.getElementsByClassName("country-p")[0].innerText
-// );
-// console.log(
-//   toTitleCase(document.getElementsByClassName("country-p")[0].innerText)
-// );
