@@ -51,6 +51,9 @@ width = window.innerWidth;
 height = window.innerHeight;
 console.log(width, height);
 
+/*
+When clicking on a defintion it will appear or disappear depending on it's current state. Implemented to reduce clutter on mobile.
+*/
 var x = document.querySelectorAll(".inline-d");
 
 x.forEach((e) => {
@@ -58,24 +61,11 @@ x.forEach((e) => {
     console.log(e.childNodes[1].className);
     console.log(e.childNodes[1].textContent);
     w = e.childNodes[1];
-
-    // document.querySelector(w).classList.toggle("expand");
     s = getComputedStyle(w);
-    console.log();
     if (s.display === "none") {
       w.style.display = "inline";
     } else if (s.display === "inline") {
       w.style.display = "none";
     }
-    //w.style.display = "none";
-
-    // var y = document.querySelectorAll(".defintion");
-    // y.forEach((z) => {
-    //   z.classList.toggle("expand");
-    // });
   });
 });
-//});
-
-console.log(x);
-console.log();
