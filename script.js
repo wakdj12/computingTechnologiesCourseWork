@@ -85,12 +85,13 @@ x.forEach((e) => {
 DECLUTTERING END
 */
 
-/* calculating header height for offset */
+/* calculating header height for internal link offset due to the sticky header */
 
 var page = document.querySelector("*");
 var header = document.querySelector("header");
 var height = header.offsetHeight;
 console.log(height);
-page.style.scrollPaddingTop = height;
+console.log(height + height / 5);
+page.style.scrollPaddingTop = height + height / 5;
 
 /* calculating header height for offset end */
