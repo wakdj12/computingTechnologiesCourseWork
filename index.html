@@ -150,150 +150,213 @@
       </p>
 
       <h3>Types of Attacks</h3>
-      <ol class="two-columns">
-        <li>
-          <a
-            href="https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing"
-            target="_blank"
-            >Phishing</a
-          >
-          <ul>
-            <li>
-              <span class="inline-d">What is it -</span> A form of
-              <a
-                href="https://www.itgovernance.co.uk/social-engineering-attacks"
-                target="_blank"
-                >social engineering</a
-              >
-              where the target is tricked into performing an action which leads
-              to a vulnerabilty
-            </li>
-            <li>
-              <span class="inline-d">How is it carried out -</span> The attacker
-              will usually send out emails or messages which appear to be
-              genuine, such as a fake bank statement. This deceitful email will
-              then trick the user into entering their bank details which are
-              then transferred back to the attacker, allowing them to steal
-              funds from the account.
-            </li>
-            <li>
-              <span class="inline-d">How can it be prevented -</span> Being
-              aware of phishing attacks and taking care when clicking on links
-              in emails/ messages is the best prevention technique here.
-              Organisations may also introduce filters into their email system
-              which restricts emails coming from outside sources.
-            </li>
-          </ul>
-        </li>
+      <div class="flex-container">
+        <ul class="left">
+          <li>
+            <a
+              href="https://www.nist.gov/itl/smallbusinesscyber/guidance-topic/phishing"
+              target="_blank"
+              >Phishing</a
+            >
+            <ul>
+              <li>
+                <span class="inline-d"
+                  >What is it
+                  <span class="definition">
+                    - A form of
+                    <a
+                      href="https://www.itgovernance.co.uk/social-engineering-attacks"
+                      target="_blank"
+                      >social engineering</a
+                    >
+                    where the target is tricked into performing an action which
+                    leads to a vulnerabilty.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How is it carried out
+                  <span class="definition">
+                    - The attacker will usually send out emails or messages
+                    which appear to be genuine, such as a fake bank statement.
+                    This deceitful email will then trick the user into entering
+                    their bank details which are then transferred back to the
+                    attacker, allowing them to steal funds from the account.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How can it be prevented
+                  <span class="definition">
+                    - Being aware of phishing attacks and taking care when
+                    clicking on links in emails/ messages is the best prevention
+                    technique here. Organisations may also introduce filters
+                    into their email system which restricts emails coming from
+                    outside sources.
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </li>
 
-        <li>
-          <a
-            href="https://www.ncsc.gov.uk/collection/denial-service-dos-guidance-collection"
-            target="_blank"
-            >Dos and DDoS</a
-          >
-          <ul>
-            <li>
-              <span class="inline-d">What is it -</span> DoS and DDoS are both
-              acronyms for Denial of Service and Distributed Denial of Service
-              respectively. Usually directed towards organisations and
-              governments instead of individuals as a result of ideology instead
-              of financial gain.
-            </li>
-            <li>
-              <span class="inline-d">How is it carried out -</span> Both similar
-              as they both overload a server with requests, resulting in reduced
-              functionallity for that server and potentially shutting it down,
-              hence DoS. DDoS attacks come from a network of connected computers
-              called botnets whereas DoS attacks originate from one source. DDoS
-              attacks are usually more punishing because of this as it can be
-              difficult to find the origin and block it from making requests to
-              a server.
-            </li>
-            <li>
-              <span class="inline-d">How can it be prevented -</span> By using a
-              combination of Intrusion Detection Systems and Intrusion
-              Prevention Systems. These basically just monitor and block any
-              unwanted connections by matching patterns between what is actually
-              happening and what they have been &ldquo;told&rdquo; what a danger
-              is.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a
-            href="https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks"
-            target="_blank"
-            >Malware Attack</a
-          >
-          <ul>
-            <li>
-              <span class="inline-d">What is it -</span> Generic term for any
-              attack involving malicious software. Examples include key-loggers
-              which track what you have typed and
-              <a href="https://csrc.nist.gov/glossary/term/worm" target="_blank"
-                >worms</a
-              >
-              which replicate themselves and infect inter-connected devices as
-              opposed to a regular virus which usually only infect one machine.
-            </li>
-            <li>
-              <span class="inline-d">How is it carried out -</span> Usually
-              there is an element of social engineering involved such as a
-              phishing attack with a seemingly legitimate looking link which
-              actually contains a malicious payload. Another way in which this
-              is achieved is through
-              <a
-                href="https://portswigger.net/web-security/cross-site-scripting"
-                >Cross Site Scripting (XSS)</a
-              >. To achieve this attackers will take advantage of an insecure
-              website and sneakily embed the malicious software, which is then
-              executed when a user accesses that website.
-            </li>
-            <li>
-              <span class="inline-d">How can it be prevented -</span> Some
-              overlap with preventing phishing as social engineering is a key
-              part in the delivery of malware so awareness of the way in which
-              attackers operate is key. Anti-virus software is also a good idea.
-              Some organisations impose restrictions on the devices their
-              employees use. This is known as
-              <a
-                href="https://www.intel.co.uk/content/www/uk/en/business/enterprise-computers/resources/system-hardening.html"
-                target="_blank"
-                >System Hardening</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a
-            href="https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks"
-            >Brute Force Attack
-          </a>
-          <ul>
-            <li>
-              <span class="inline-d">What is it -</span>A way in which an
-              attacker &ldquo;cracks&rdquo; a password in order to gain
-              unauthorized access to a system.
-            </li>
-            <li>
-              <span class="inline-d">How is it carried out -</span>
-              Achieved through a program which normally submits between 10,000
-              and 1 billion passwords per second depending on how powerful their
-              equipment is. Simple to do and very effective.
-            </li>
-            <li>
-              <span class="inline-d">How can it be prevented -</span> Using very
-              strong passwords i.e. long, not an actual word, and containing a
-              mix of numbers, symbols and letters. Another way which prevents
-              unauthorized access even if the password is cracked is by using
-              two-factor authentication (2FA) so when trying to log into a
-              computer/ service the user will also have to enter the new factor
-              (usually a randomly generated number).
-            </li>
-          </ul>
-        </li>
-      </ol>
+          <li>
+            <a
+              href="https://www.ncsc.gov.uk/collection/denial-service-dos-guidance-collection"
+              target="_blank"
+              >Dos and DDoS</a
+            >
+            <ul>
+              <li>
+                <span class="inline-d"
+                  >What is it
+                  <span class="definition">
+                    - DoS and DDoS are both acronyms for Denial of Service and
+                    Distributed Denial of Service respectively. Usually directed
+                    towards organisations and governments instead of individuals
+                    as a result of ideology instead of financial gain.
+                  </span>
+                </span>
+                <p></p>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How is it carried out
+                  <span class="definition">
+                    - Both similar as they both overload a server with requests,
+                    resulting in reduced functionallity for that server and
+                    potentially shutting it down, hence DoS. DDoS attacks come
+                    from a network of connected computers called botnets whereas
+                    DoS attacks originate from one source. DDoS attacks are
+                    usually more punishing because of this as it can be
+                    difficult to find the origin and block it from making
+                    requests to a server.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How can it be prevented
+                  <span class="definition">
+                    - By using a combination of Intrusion Detection Systems and
+                    Intrusion Prevention Systems. These basically just monitor
+                    and block any unwanted connections by matching patterns
+                    between what is actually happening and what they have been
+                    &ldquo;told&rdquo; what a danger is.
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="right">
+          <li>
+            <a
+              href="https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks"
+              target="_blank"
+              >Malware Attack</a
+            >
+            <ul>
+              <li>
+                <span class="inline-d"
+                  >What is it
+                  <span class="definition">
+                    - Generic term for any attack involving malicious software.
+                    Examples include key-loggers which track what you have typed
+                    and
+                    <a
+                      href="https://csrc.nist.gov/glossary/term/worm"
+                      target="_blank"
+                      >worms</a
+                    >
+                    which replicate themselves and infect inter-connected
+                    devices as opposed to a regular virus which usually only
+                    infect one machine.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How is it carried out
+                  <span class="definition">
+                    - Usually there is an element of social engineering involved
+                    such as a phishing attack with a seemingly legitimate
+                    looking link which actually contains a malicious payload.
+                    Another way in which this is achieved is through
+                    <a
+                      href="https://portswigger.net/web-security/cross-site-scripting"
+                      >Cross Site Scripting (XSS)</a
+                    >. To achieve this attackers will take advantage of an
+                    insecure website and sneakily embed the malicious software,
+                    which is then executed when a user accesses that website.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How can it be prevented
+                  <span class="definition">
+                    - Some overlap with preventing phishing as social
+                    engineering is a key part in the delivery of malware so
+                    awareness of the way in which attackers operate is key.
+                    Anti-virus software is also a good idea. Some organisations
+                    impose restrictions on the devices their employees use. This
+                    is known as
+                    <a
+                      href="https://www.intel.co.uk/content/www/uk/en/business/enterprise-computers/resources/system-hardening.html"
+                      target="_blank"
+                      >System Hardening</a
+                    >
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="https://www.ncsc.gov.uk/guidance/mitigating-malware-and-ransomware-attacks"
+              >Brute Force Attack
+            </a>
+            <ul>
+              <li>
+                <span class="inline-d"
+                  >What is it
+                  <span class="definition"
+                    >- A way in which an attacker &ldquo;cracks&rdquo; a
+                    password in order to gain unauthorized access to a system.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How is it carried out
+                  <span class="definition">
+                    - Achieved through a program which normally submits between
+                    10,000 and 1 billion passwords per second depending on how
+                    powerful their equipment is. Simple to do and very
+                    effective.
+                  </span>
+                </span>
+              </li>
+              <li>
+                <span class="inline-d"
+                  >How can it be prevented
+                  <span class="definition">
+                    - Using very strong passwords i.e. long, not an actual word,
+                    and containing a mix of numbers, symbols and letters.
+                    Another way which prevents unauthorized access even if the
+                    password is cracked is by using two-factor authentication
+                    (2FA) so when trying to log into a computer/ service the
+                    user will also have to enter the new factor (usually a
+                    randomly generated number).
+                  </span>
+                </span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
       <div class="card-container" id="a">
         <div class="cards" id="chn">
