@@ -64,6 +64,14 @@ img {
   height: auto;
   display: block;
   margin: auto;
+  border-radius: 0.7em;
+}
+
+img:hover {
+  box-shadow: 0.15em 0.15em 1em rgba(193, 225, 193, 0.4);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 nav li {
@@ -85,6 +93,7 @@ ul {
 
 li {
   margin-left: 0.75em;
+  padding: 0.25em;
 }
 nav {
   text-align: center;
@@ -121,7 +130,10 @@ button {
 .inline-d {
   color: #fac898;
 }
-
+.inline-d:active,
+.inline-d:hover {
+  color: #a7c7e7;
+}
 /* Modal Content */
 /* The Modal (background) */
 .modal {
@@ -276,3 +288,9 @@ button {
 }
 
 /**/
+
+footer {
+  text-align: center;
+  margin-top: 3em;
+  border-top: solid 0.1em #a7c7e7;
+}
