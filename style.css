@@ -4,12 +4,12 @@
   color: #fffff0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: lighter;
-  scroll-padding-top: 10vw;
+  scroll-padding-top: 10em;
 }
 
 body {
   background-color: #121212;
-  margin: 1em;
+  margin: 2.5em;
 }
 #wrapper {
   background-color: #121212;
@@ -83,16 +83,7 @@ ul {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-.flex-container {
-  margin-left: 15%;
-  display: flex;
-  flex-direction: row;
-}
-.left,
-.right {
-  width: 100%;
-  flex-direction: column;
-}
+
 li {
   margin-left: 0.75em;
 }
@@ -258,6 +249,16 @@ button {
   }
   .usa {
     max-width: 33%;
+  }
+  .flex-container {
+    margin-left: 12.5%;
+    display: flex;
+    flex-direction: row;
+  }
+  .left,
+  .right {
+    width: 100%;
+    flex-direction: column;
   }
 }
 

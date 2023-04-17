@@ -1,10 +1,10 @@
-// Get the modal
+/*
+Show modal window
+*/
 var modal = document.getElementsByClassName("modal");
 
-// Get the button that opens the modal
 var btn = document.getElementsByClassName("btn");
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close");
 
 for (let i = 0; i < 4; i++) {
@@ -27,6 +27,13 @@ for (let i = 0; i < 4; i++) {
 }
 
 /*
+Show modal window end
+*/
+
+/*
+INFORMATION FROM API
+*/
+/*
  https://ipdata.co/blog/how-to-get-the-ip-address-in-javascript/
 */
 function json(url) {
@@ -46,6 +53,10 @@ json(`https://api.ipdata.co/27.126.160.0/threat?api-key=${apiKey}`).then(
     console.log(data.blocklists);
   }
 );
+
+/*
+INFORMATION FROM API END
+*/
 
 width = window.innerWidth;
 height = window.innerHeight;
@@ -69,3 +80,17 @@ x.forEach((e) => {
     }
   });
 });
+
+/*
+DECLUTTERING END
+*/
+
+/* calculating header height for offset */
+
+var page = document.querySelector("*");
+var header = document.querySelector("header");
+var height = header.offsetHeight;
+console.log(height);
+page.style.scrollPaddingTop = height;
+
+/* calculating header height for offset end */
