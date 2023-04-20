@@ -46,7 +46,7 @@ json(`https://api.ipdata.co?api-key=${apiKey}`).then((data) => {
   console.log(data.ip);
   console.log(data.city);
   console.log(data.latitude, data.longitude);
-  pInfo.textContent = `IP Adress: ${data.ip}, City: ${data.city}, Approximate Latitude: ${data.latitude}, Approximate Longitude: ${data.longitude} `;
+  pInfo.textContent = `IP Adress: ${data.ip}, City: ${data.city}, Approximate Latitude: ${data.latitude}, Approximate Longitude: ${data.longitude}, Operating System: ${window.navigator.oscpu}`;
 });
 
 pInfo.textContent = json(
@@ -102,5 +102,7 @@ for (i = 0; i < title.length; i++) {
   console.log(title[i]);
   title[i].style.paddingBottom = -height + "px";
 }
+
+console.log(window.navigator.oscpu);
 
 /* calculating header height for offset end */
