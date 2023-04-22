@@ -17,6 +17,7 @@
     <div id="wrapper">
       <header>
         <h1>Why You Should Be Concerned</h1>
+
         <nav>
           <ul>
             <li><a href="#">Introduction</a></li>
@@ -25,6 +26,12 @@
             <li><a href="#privacy">Privacy Concerns</a></li>
           </ul>
         </nav>
+        <div class="switcharoo">
+          <label class="switch">
+            <input type="checkbox" value="0" />
+            <span class="slider round"></span>
+          </label>
+        </div>
       </header>
       <h2>Introduction</h2>
       <p>
@@ -186,7 +193,7 @@
 
       <h2 id="threat" class="shift">Threats</h2>
       <p>
-        <em class="definition">
+        <em class="definition-x">
           <a
             href="https://csrc.nist.gov/glossary/term/cyber_threat"
             target="_blank"
@@ -758,19 +765,21 @@
         Secondly, there should policies in place detailling a incident response
         plan which should go outline the following steps...
       </p>
-      <p>Finally, depending on the sensitiity of</p>
+      <p>Finally, depending on the sensitivity of the data</p>
       <div class="flex-container">
         <ul class="left">
           <li>
             <span class="inline-d"
               >Preparation
-              <span>Performing drills, policy reviews, staff training</span>
+              <span class="definition"
+                >Performing drills, policy reviews, staff training</span
+              >
             </span>
           </li>
           <li>
             <span class="inline-d"
               >Identification
-              <span
+              <span class="definition"
                 >Time of attack, business areas affected(not usually physical
                 locations, but possible), who discovered it.</span
               >
@@ -781,7 +790,7 @@
           <li>
             <span class="inline-d"
               >Containment
-              <span
+              <span class="definition"
                 >Making sure the attack doesn't spread to other business areas.
                 May necessitate taking certain services offline.</span
               >
@@ -790,7 +799,7 @@
           <li>
             <span class="inline-d"
               >Eradication
-              <span
+              <span class="definition"
                 >Removing any potentially infected machines. Does the whole
                 system need to be replaced?</span
               >
@@ -801,7 +810,7 @@
           <li>
             <span class="inline-d"
               >Recovery
-              <span
+              <span class="definition"
                 >Returning affected business areas to a trustworthy state.</span
               >
             </span>
@@ -809,7 +818,7 @@
           <li>
             <span class="inline-d"
               >Lessons Learned
-              <span
+              <span class="definition"
                 >Discussion on what needs to change so this type of attack won't
                 happen again.</span
               >

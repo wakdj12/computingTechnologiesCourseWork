@@ -14,10 +14,12 @@ body {
   background-color: #121212;
   margin: auto;
 }
+
 header {
   border-bottom: solid 0.05em #c1e1c1;
   border-radius: 0;
   position: sticky; /* keeps the header at the top */
+  padding-bottom: 2.5em;
   top: 0;
   z-index: 10;
   height: 6em;
@@ -51,7 +53,9 @@ h4 {
   text-align: center;
   list-style: none;
 }
-
+h2 {
+  padding-top: 0.5em;
+}
 h1,
 h2,
 h3,
@@ -98,9 +102,6 @@ li {
 nav {
   text-align: center;
 }
-em {
-  color: #fffdd0;
-}
 
 a:link,
 a:visited,
@@ -123,6 +124,76 @@ button {
   background-color: inherit;
 }
 
+/*
+Radio button
+ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
+Not my work
+*/
+
+.switcharoo {
+  display: inline-flex;
+  float: right;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin: 0.5em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  left: 0.1em;
+  bottom: 0.25em;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Sun_of_York.svg/1200px-Sun_of_York.svg.png");
+  background-attachment: inherit;
+  background-size: contain;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  /* -webkit-transform: translateX(1.625em);
+  -ms-transform: translateX(-0.8em);
+  transform: translateX(-0.8em); */
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Darkmode_moon_shining_stars.svg/900px-Darkmode_moon_shining_stars.svg.png?20220205043149");
+  background-attachment: inherit;
+  background-size: contain;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 2em;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*
+Radio Button End
+*/
+
 .shift {
   display: block;
 }
@@ -139,7 +210,7 @@ button {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 11;
   padding-top: 30vh;
   left: 0;
   top: 0;
@@ -288,6 +359,73 @@ button {
 }
 
 /**/
+
+/*
+Dark Mode Styling
+*/
+.darkMode-bcw {
+  background-color: #fff5d7 !important;
+  border-bottom: solid 0.05em #734f96;
+}
+.darkMode-head1 {
+  color: #bb605c;
+}
+
+.darkMode-head2 {
+  color: #bb605c;
+}
+.darkMode-txt {
+  color: #121212;
+}
+
+.darkMode-modalText li {
+  color: #121212 !important;
+}
+
+.darkMode-modalContent {
+  background-color: #fff5d7;
+}
+
+.darkMode-emph {
+  color: #a483c2;
+}
+
+.darkMode-innyD {
+  color: #053767;
+}
+.inline-d:hover.darkMode-innyD {
+  color: salmon;
+}
+
+.darkMode-card {
+  border: solid #734f96 0.05em;
+  box-shadow: 0.1em 0.1em 1em rgba(115, 79, 150, 0.3);
+}
+
+img:hover.darkMode-img {
+  box-shadow: 0.15em 0.15em 1em rgba(115, 79, 150, 0.4);
+}
+
+.darkMode-modalHeader {
+  background-color: #bb605c;
+}
+
+a:link.darkMode-anch,
+a:visited.darkMode-anch,
+a:hover.darkMode-anch,
+a:active.darkMode-anch {
+  text-decoration: none;
+  color: #734f96 !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover.darkMode-anch {
+  color: silver !important;
+}
+/*
+  Dark Mode Styling End
+  */
 
 footer {
   text-align: center;
